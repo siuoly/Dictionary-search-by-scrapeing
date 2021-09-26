@@ -37,7 +37,12 @@ def testEmpyhList( ary ):
 #first parse
 def parse0(soup):
     # 簡短中翻英
-    print(soup.select("meta[itemprop='headline']")[0]["content"])
+    try :   # 這段失敗, 代表找不到這個單字
+        print(soup.select("meta[itemprop='headline']")[0]["content"])
+    except:
+        print( f'"{word}" word not found.')
+        exit(1)
+
     print( "=" * 70 )  #換行
 
     # 第一層級 parse , 取詞性區塊
