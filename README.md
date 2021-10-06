@@ -19,3 +19,10 @@ e.g.
 ./cambridge.py "show home"
 ./cambridge.py show-home    # equal above, using "dash" for phrase.
 ```
+
+### Insttall & Remove
+```
+./install.sh            # install to the bin directory
+./install.sh remove     # remove for the bin directory
+
+```
